@@ -73,3 +73,4 @@ CREATE TABLE IF NOT EXISTS intern_flow.Members (
     team_id BIGINT REFERENCES intern_flow.Team(team_id),
     student_id BIGINT REFERENCES intern_flow.Student(student_id)
 );
+

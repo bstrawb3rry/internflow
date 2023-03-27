@@ -57,8 +57,6 @@ tasks.named('test') {
 	useJUnitPlatform()
 }
 
-
 bootRun.doFirst {
 	bootRun.systemProperty('spring.profiles.active', 'dev')
 }
-
