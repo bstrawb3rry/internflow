@@ -15,13 +15,13 @@ import java.time.OffsetDateTime;
 public class MentorEntity {
     @Id
     @SequenceGenerator(
-            name = "studentGenerator",
-            sequenceName = "intern_flow.sq_student_id",
+            name = "mentorGenerator",
+            sequenceName = "intern_flow.sq_mentor_id",
             allocationSize = 1
     )
 
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "mentorGenerator")
     @Column(name = "mentor_id")
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "mentorGenerator")
     private Long mentorId;
 
     @Column(name = "first_name")
@@ -37,7 +37,7 @@ public class MentorEntity {
     private OffsetDateTime timestamp;
 
     public MentorEntity() {
-        //   no-arg constructor
+        // no-arg constructor
     }
 
     // Getters and setters
