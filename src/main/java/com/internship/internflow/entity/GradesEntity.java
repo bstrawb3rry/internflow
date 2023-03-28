@@ -27,14 +27,6 @@ public class GradesEntity {
     private Long gradeId;
 
 
-    @Column(name = "student_id")
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "studentGenerator")
-    private Long studentId;
-
-    @Column(name = "mentor_id")
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "mentorGenerator")
-    private Long mentorId;
-
     @Column(name = "grade_value")
     private int gradeValue;
 
@@ -55,22 +47,6 @@ public class GradesEntity {
 
     public void setGradeId(Long gradeId) {
         this.gradeId = gradeId;
-    }
-
-    public Long getStudentId() {
-        return studentId;
-    }
-
-    public void setStudentId(Long studentId) {
-        this.studentId = studentId;
-    }
-
-    public Long getMentorId() {
-        return mentorId;
-    }
-
-    public void setMentorId(Long mentorId) {
-        this.mentorId = mentorId;
     }
 
     public int getGradeValue() {
